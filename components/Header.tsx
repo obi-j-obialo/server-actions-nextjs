@@ -8,7 +8,7 @@ export default function Header() {
   const pathname = usePathname();
   console.log(pathname);
   return (
-    <header className={`flex justify-between items-center py-4 px-6 md:px-0`}>
+    <header className="flex justify-between items-center py-4 px-6 xl:px-0">
       <h1>Logo Here</h1>
       <ul className="flex items-center space-x-4">
         <Link
@@ -20,12 +20,12 @@ export default function Header() {
           Home
         </Link>
         <Link
-          href="/todos"
+          href="/employees"
           className={`${
-            pathname === "/todos" ? "text-green-300" : "text-slate-300"
+            pathname === "/employees" ? "text-green-300" : "text-slate-300"
           }`}
         >
-          Todos
+          Employees
         </Link>
       </ul>
     </header>
